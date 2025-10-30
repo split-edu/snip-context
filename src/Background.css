@@ -1,21 +1,23 @@
 .red {
-    background-color: red;
+  background-color: red;
 }
+
 .green {
-    background-color: green;
+  background-color: green;
 }
+
 .blue {
-    background-color: blue;
+  background-color: blue;
 }
 
-.option-red{
-    color: red;
+.option-red {
+  color: red;
 }
 
-.option-green{
-    color: green;
+.option-green {
+  color: green;
 }
 
-.option-blue{
-    color: blue;
+.option-blue {
+  color: blue;
 }
