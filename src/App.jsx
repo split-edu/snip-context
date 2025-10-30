@@ -5,16 +5,20 @@ import Selection from "./Selection.jsx";
 import Jumbotron from "./Jumbotron.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [current, setCurrent] = useState(BackgroundContext.defaultValue.current);
+  const inital = {
+      ...BackgroundContext.defaultValue,
+      current
+  };
 
   return (
     <>
-        <BackgroundContext.Provider value={BackgroundContext.defaultValue}>
+        <BackgroundContext.Provider value={inital}>
             <div>
                 <h1>Sample Context</h1>
             </div>
             <div>
-                <Selection></Selection>
+                <Selection setCurrent={setCurrent}></Selection>
             </div>
             <div>
                 <Jumbotron></Jumbotron>
